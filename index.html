@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2303;</button>
+    <section class="navbar-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fffcec;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#intro-section"><img src="img/logo.png" style="max-width: 150px; max-height: 90px;" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active navbar-item-custom">
+                            <a class="nav-link" href="#writing-section">Writing <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active navbar-item-custom">
+                            <a class="nav-link" href="#project-section">Projects <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active navbar-item-custom">
+                            <a class="nav-link" href="#contact-section">Contact <span class="sr-only">(current)</span></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="intro-section" id="intro-section">
+        <div class="container intro-content" id="intro-content">
+            <h1 class="intro-header" id="intro-header">Fahadul Islam Shadhin</h1>
+            <h2 class="intro-subheader" id="intro-subheader">Computer Science Undergrad</h2>
+            <br>
+            <div class="social-icons">
+                <a class="social-icon" class="social-icon" href="https://github.com/fahadulshadhin"><i class="fa fa-github"></i></a>
+                <a class="social-icon" class="social-icon" href="https://fahadulshadhin.medium.com"><i class="fa fa-medium"></i></a>
+                <a class="social-icon" class="social-icon" href="https://www.linkedin.com/in/fahadul-shadhin/"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="writing-section" id="writing-section">
+        <div class="container writing-content" id="writing-content">
+            <h2 class="writing-header">I write on Medium</h2>
+            <p class="writing-text" id="writing-text">I am constantly writing articles on Medium. Whenever I learn something new, I document them there.</p>
+            <p class="writing-text">Read my articles: <a class="medium-link" href="https://medium.com/fahadulshadhin">medium.com/fahadulshadhin</a></p>
+        </div>
+    </section>
+
+    <section class="project-section" id="project-section">
+        <div class="container project-content" id="project-content">
+            <h2 class="project-header" id="project-header">Projects</h2>
+            <br>
+            <div class="card project-card">
+                <div class="card-body">
+                  <h5 class="card-title">Sorting Algorithms Visualizer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">A Python application to visualize various sorting algorithms</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Made with: Python & Tkinter</h6>
+                  <a href="https://github.com/FahadulShadhin/Sorting-Algorithms-Visualizer" class="card-link">GitHub repository</a>
+                  <!-- <a href="#" class="card-link">Demo</a> -->
+                </div>
+            </div>
+            <br>
+            <div class="card project-card">
+                <div class="card-body">
+                  <h5 class="card-title">Brikkho.com</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">E-commerce web application usign Django</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Made with: Django, HTML, CSS, Sqlite3, and Bootstrap</h6>
+                  <a href="https://github.com/FahadulShadhin/brikkho" class="card-link project-link">GitHub repository</a>
+                  <a href="https://brikkho-v1.herokuapp.com/" class="card-link project-link">Demo</a>
+                </div>
+            </div>
+            <br>
+            <div class="card project-card">
+                <div class="card-body">
+                  <h5 class="card-title">Django Login System</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">User signup and signin system in Django</h6>
+                  <a href="https://github.com/FahadulShadhin/django_login_system" class="card-link">GitHub repository</a>
+                  <!-- <a href="#" class="card-link">Demo</a> -->
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="container contact-content" id="contact-content">
+            <h2 class="contact-header" id="contact-header">Contact me</h2>
+            <br>
+            <h4 class="contact-subheader" id="sontact-subheader">Email: <a class="contact-link" href="mailto:fahadulshadhin17@gmail.com">fahadulshadhin17@gmail.com</a></h4>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">&#xA9; 2021 Shadhin</p>
+    </footer>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
