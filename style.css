@@ -28,7 +28,7 @@ p {
 
 .navbar-section {
     background-color: var(--primary-background-color);
-    border-bottom: 1px solid #8a8a8a;
+    /* border-bottom: 1px solid #8a8a8a; */
 }
 
 .navbar-item-custom {
@@ -52,15 +52,16 @@ p {
 .intro-header {
     text-align: center;
     text-shadow: 3px 3px 7px var(--shadow-color);
+    font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .intro-subheader {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 3px 3px 7px var(--shadow-color);
     letter-spacing: 2px;
 }
@@ -80,8 +81,8 @@ p {
     width: 5rem;
     background-color: var(--primary-background-color);
     text-decoration: none;
-    font-size: 70px;
-    margin-right: 2.5rem;
+    font-size: 50px;
+    /* margin-right: 0.5rem; */
 }
 
 .social-icons .social-icon:last-child {
@@ -91,7 +92,7 @@ p {
 .social-icons .social-icon:hover {
     background-color: var(--primary-background-color);
     text-decoration: none;
-    font-size: 90px;
+    font-size: 60px;
     cursor: pointer;
     transition: 0.001s;
 }
@@ -230,7 +231,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 385px) {
+/* @media only screen and (max-width: 385px) {
     .social-icons .social-icon {
         height: 3rem;
         width: 3rem;
@@ -241,4 +242,4 @@ footer {
     .social-icons .social-icon:hover {
         font-size: 70px;
     }
-}
+} */
