@@ -1,2 +1,1 @@
-# personal-website
-Personal website on netlify
+### My personal website on netlify
