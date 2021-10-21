@@ -16,7 +16,7 @@
     transition: 0.3s;
 }
 
-html {
+html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
@@ -45,7 +45,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--primary-background-color);
 }
 
@@ -101,7 +101,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--secondary-background-color);
 }
 
@@ -115,6 +115,16 @@ p {
 
 .writing-text {
     color: var(--secondary-text-color);
+}
+
+.article-link {
+    text-decoration: underline;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.article-link:hover {
+    color: #b9b9b9;
 }
 
 .medium-link {
@@ -132,7 +142,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    /* height: auto; */
     background-color: var(--primary-background-color);
 }
 
@@ -152,7 +163,8 @@ p {
 }
 
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
+    /* height: auto; */
     background-color: var(--secondary-background-color);
     display: flex;
     justify-content: center;
@@ -185,7 +197,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3vh;
+    min-height: 3vh;
     background-color: var(--secondary-background-color);
 }
 
@@ -215,21 +227,27 @@ footer {
     background-color: #555;
 }
 
-@media only screen and (max-width: 560px) {
+/* @media only screen and (max-width: 560px) {
     .project-section {
-        height: fit-content;
+        height: auto;
     }
 
     .project-header {
         margin-top: 70px;
     }
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .project-header {
         margin-top: 70px;
     }
-}
+} */
+
+/* @media only screen and (max-width: 350px) {
+    .writing-section {
+        height: auto;
+    }
+} */
 
 /* @media only screen and (max-width: 385px) {
     .social-icons .social-icon {
