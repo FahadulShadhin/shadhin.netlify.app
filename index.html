@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2303;</button>
+    <button onclick="topFunction()" id="go-to-top-btn" class="go-to-top-btn" title="Go to top">top</button>   <!--up-arrow: &#x2303; -->
+    
     <section class="navbar-section">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fffcec;">
@@ -82,9 +83,10 @@
             <div class="card project-card">
                 <div class="card-body">
                   <h5 class="card-title">Sorting Algorithms Visualizer</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">A Python application to visualize various sorting algorithms</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">Made with: Python & Tkinter</h6>
+                  <p class="card-subtitle mb-2 text-muted">A Python application to visualize various sorting algorithms</p>
+                  <p class="card-subtitle project-tag mb-2 text-muted">Made with: Python & Tkinter</p>
                   <a href="https://github.com/FahadulShadhin/Sorting-Algorithms-Visualizer" class="card-link">GitHub repository</a>
+                  <a href="https://vimeo.com/504387308" class="card-link project-link">Demo</a>
                   <!-- <a href="#" class="card-link">Demo</a> -->
                 </div>
             </div>
@@ -92,8 +94,8 @@
             <div class="card project-card">
                 <div class="card-body">
                   <h5 class="card-title">Brikkho.com</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">E-commerce web application usign Django</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">Made with: Django, HTML, CSS, Sqlite3, and Bootstrap</h6>
+                  <p class="card-subtitle mb-2 text-muted">E-commerce web application usign Django</p>
+                  <p class="card-subtitle project-tag mb-2 text-muted">Made with: Django, HTML, CSS, Sqlite3, and Bootstrap</p>
                   <a href="https://github.com/FahadulShadhin/brikkho" class="card-link project-link">GitHub repository</a>
                   <a href="https://brikkho-v1.herokuapp.com/" class="card-link project-link">Demo</a>
                 </div>
@@ -102,7 +104,8 @@
             <div class="card project-card">
                 <div class="card-body">
                   <h5 class="card-title">Django Login System</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">User signup and signin system in Django</h6>
+                  <p class="card-subtitle mb-2 text-muted">User registration and login application in Django</p>
+                  <p class="card-subtitle project-tag mb-2 text-muted">Made with: Django</p>
                   <a href="https://github.com/FahadulShadhin/django_login_system" class="card-link">GitHub repository</a>
                   <!-- <a href="#" class="card-link">Demo</a> -->
                 </div>
@@ -124,7 +127,7 @@
     </footer>
 
     <script>
-        var mybutton = document.getElementById("myBtn");
+        var mybutton = document.getElementById("go-to-top-btn");
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {

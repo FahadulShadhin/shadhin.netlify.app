@@ -28,7 +28,6 @@ p {
 
 .navbar-section {
     background-color: var(--primary-background-color);
-    /* border-bottom: 1px solid #8a8a8a; */
 }
 
 .navbar-item-custom {
@@ -158,6 +157,14 @@ p {
     color: var(--primary-text-color);
 }
 
+.card-link {
+    font-size: 16px;
+}
+
+.project-tag {
+    font-size: 16px;
+}
+
 .project-card, .card-text {
     background-color: var(--primary-background-color);
 }
@@ -207,13 +214,13 @@ footer {
     text-align: center;
 }
 
-#myBtn {
+.go-to-top-btn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
     outline: none;
     background-color: var(--primary-text-color);
@@ -223,7 +230,7 @@ footer {
     border-radius: 100%;
 }
   
-#myBtn:hover {
+.go-to-top-btn:hover {
     background-color: #555;
 }
 
